@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="content">
+    <div class="content__corner-rectangle"></div>
+    <div class="content__main">
+      <h1 class="section__title">Cadastro de <span>Cliente</span></h1>
+      <div class="form__container">
+        <form class="form">
+          <div class="form__columns">
+            <div class="form__column">
+              <label class="form__label" for="nome">Nome:</label>
+              <input class="form__input" type="text" id="nome" />
+
+              <label class="form__label" for="identificacao">Identificação</label>
+              <input class="form__input" type="text" id="identificacao" />
+
+              <label class="form__label" for="telefone">Telefone</label>
+              <input class="form__input" type="text" id="telefone" />
+
+              <label class="form__label" for="email">Email</label>
+              <input class="form__input" type="email" id="email" />
+            </div>
+            <div class="form__column">
+              <label class="form__label" for="quantidade">Quantidade de Pessoas</label>
+              <input class="form__input" type="number" id="quantidade" />
+
+              <label class="form__label" for="pagamento">Forma de Pagamento</label>
+              <select class="form__input" id="pagamento" style="width: 106%; height: 13%;">
+                <option value="Dinheiro">Dinheiro</option>
+                <option value="Cartão">Cartão</option>
+                <option value="Pix">Pix</option>
+              </select>
+
+              <label class="form__label" for="checkin">Check-In</label>
+              <input class="form__input" type="date" id="checkin" />
+
+              <label class="form__label" for="checkout">Check-Out</label>
+              <input class="form__input" type="date" id="checkout" />
+            </div>
+          </div>
+          <div class="form__buttons">
+            <button type="button" class="button primary">Cadastrar</button>
+            <button type="button" class="button secondary">Reiniciar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
